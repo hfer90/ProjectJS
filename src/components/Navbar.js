@@ -1,7 +1,7 @@
 import React from "react";
 import {Navbar,NavDropdown,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../img/logo.jpg'; // falta agregar imagen
+import logo from '../img/logo.jpg'; 
 
 
 function Minav() {
@@ -28,7 +28,8 @@ function Minav() {
                             <NavDropdown.Item href="#action/3.2">Cuadros</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Varios</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#link">Contacto</Nav.Link>
+                        <Nav.Link href="#link">Contacto</Nav.Link>                        
+                        <img alt="" src={widget} width="50" height="40"/>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
