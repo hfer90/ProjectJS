@@ -29,7 +29,6 @@ function Minav() {
                             <NavDropdown.Item href="#action/3.3">Varios</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#link">Contacto</Nav.Link>                        
-                        <img alt="" src={widget} width="50" height="40"/>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

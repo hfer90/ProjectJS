@@ -1,11 +1,9 @@
-import React from "react";
-import widget from '../img/widget.jpg'; 
+// import React from "react";
+// import widget from '../img/widget.jpg'; 
 
 
-function Widget () {
-    return (
-      //  <img alt="Widget" src={logo} />
-    )
-}
+// function Widget () {
 
-export default Widget;
+// }
+
+// export default Widget;
