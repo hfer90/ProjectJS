@@ -1,4 +1,3 @@
-import React from "react";
 import './Navbar.css';
 import logo from "../../img/logo.jpg"
 import carrito from "../../img/carrito.jpg"

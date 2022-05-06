@@ -2,8 +2,6 @@ import monstera from "../img/planta-monstera.jpg"
 import gloriosum from "../img/planta-gloriosum.jpg"
 import verrucosum from "../img/planta-verrucosum.jpg"
 
-
-
 export const stock = [
     {
         nombre: 'Mon',

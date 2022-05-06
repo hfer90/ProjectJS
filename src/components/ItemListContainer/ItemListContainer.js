@@ -10,7 +10,7 @@ export const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
         
-        //ver bien aca como se arma
+        //ver bien aca como se arma y meterle tiempo de carga
         setProductos(stock)
         //
 
