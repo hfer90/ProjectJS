@@ -1,7 +1,7 @@
-import React from "react";
-import './App.css'; // ver
 import { NavBar } from "./components/Navbar/Navbar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'; // ver
 
 function App() {
   return (
