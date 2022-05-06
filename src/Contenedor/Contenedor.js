@@ -6,7 +6,7 @@ export const Contenedor = ({children}) => {
     }
 
     return (
-        <div className="row" style={styles}>
+        <div style={styles}>
             {children}
         </div>
     )
