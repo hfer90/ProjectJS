@@ -1,28 +1,28 @@
 import { useEffect, useState } from "react"
-import { stock } from "../../data/stock"
 import { ItemList } from "../ItemList/ItemList"
+import { getProducts } from "../../mocks/FakeApi"
 
 export const ItemListContainer = () => {
 
-    const [productos, setProductos] = useState([])
+    const [listaProductos, setListaProductos] = useState([])
     const [loading, setLoading] = useState(false)
+
 
     useEffect(() => {
         setLoading(true)
-        
-        //ver bien aca como se arma y meterle tiempo de carga
-        setProductos(stock)
-        //
 
-        setLoading(false)
+        getProducts
+        .then( (res) => setListaProductos (res))
+            .catch((error) =>console.log(error))
+            .finally(()=> setLoading (false))
+        }, [])
 
-    }, [])
 
     return (
         <>
             {
                 loading ? <h2>Cargando</h2>  // gif carga?
-                    : <ItemList productos={productos} />
+                    : <ItemList listaProductos={listaProductos} />
             }
         </>
     )

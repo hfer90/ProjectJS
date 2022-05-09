@@ -1,18 +1,18 @@
 import { Button, Card } from "react-bootstrap"
 
 
-export const Item = ( {id, nombre, precio, img, desc} ) => {
+export const Item = ( {id,producto} ) => {
 
     return (
         <Card className="text-center mx-auto"style={{ width: '16rem' }}>
-            <Card.Img variant="top" src={img} width= "200px" />
+            <Card.Img variant="top" src={producto.img} width= "200px" />
             <Card.Body>
-                <Card.Title>{nombre}</Card.Title>
+                <Card.Title>{producto.nombre}</Card.Title>
                 <Card.Text>
-                    {desc}
+                    {producto.desc}
                 </Card.Text>
                 <Card.Text>
-                    Precio: ${precio}
+                    Precio: ${producto.precio}
                 </Card.Text>
                 <Button variant="primary">Ver más</Button>
             </Card.Body>
