@@ -9,7 +9,8 @@ const stock = [
         desc: 'Monstera Deliciosa albo variegada var Borsigiana',
         precio: 8000,
         img: monstera,
-        stock: 5
+        stock: 5,
+        category:'mon'
     },
     {
         nombre: 'Glori',
@@ -17,7 +18,8 @@ const stock = [
         desc: 'Philodendron Gloriosum Regular Form',
         precio: 6000,
         img: gloriosum,
-        stock: 5
+        stock: 5,
+        category:'glor'
     },
     {
         nombre: 'Verru',
@@ -25,7 +27,8 @@ const stock = [
         desc: 'Philodendron Verrucosum',
         precio: 6000,
         img: verrucosum,
-        stock: 5
+        stock: 5,
+        category:'verr'
     },   
 ]
 
@@ -35,7 +38,7 @@ export const getProducts = new Promise ((resolve, reject) =>{
     if(condition){  
         setTimeout (()=>{
             resolve(stock)
-       }, 1000)
+       }, 2000)
     }else{
         reject('algo anda mal')
     }

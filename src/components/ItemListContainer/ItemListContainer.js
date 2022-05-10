@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom";
 import { ItemList } from "../ItemList/ItemList"
 import { getProducts } from "../../mocks/FakeApi"
 
@@ -7,15 +8,22 @@ export const ItemListContainer = () => {
     const [listaProductos, setListaProductos] = useState([])
     const [loading, setLoading] = useState(false)
 
+    const {categoryId} = useParams()
+        console.log(categoryId)
 
     useEffect(() => {
         setLoading(true)
 
         getProducts
-        .then( (res) => setListaProductos (res))
-            .catch((error) =>console.log(error))
-            .finally(()=> setLoading (false))
-        }, [])
+            .then((res) => {
+                if (categoryId) {
+                    setListaProductos(res.filter((prod) => prod.category === categoryId))
+                } else { setListaProductos(res) }
+
+            })
+            .catch((error) => console.log(error))
+            .finally(() => setLoading(false))
+    }, [categoryId])
 
 
     return (
