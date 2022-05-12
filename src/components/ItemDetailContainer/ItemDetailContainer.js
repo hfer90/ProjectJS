@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom"
 import { getProducts } from "../../mocks/FakeApi"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 
 export const ItemDetailContainer = () => {
+    
     const [productDetail, setProductDetail] = useState({})
     const [carg, setCarg] = useState(false)
 

@@ -28,9 +28,11 @@ export const ItemDetail = ({nombre, id, desc, precio, img, stock}) => {
 
     return (
         <Contenedor>
-            <div>
+            <div >
                 <h2>Detalle de producto</h2>
-                <img src={img} alt={nombre}/>
+                <hr />
+                <div className="text-center mx-auto">
+                <img style={{width: '30rem'}} src={img} alt={nombre}/>
                 <p>{desc}</p>
                 <p>Stock: {stock}</p>
                 
@@ -42,6 +44,7 @@ export const ItemDetail = ({nombre, id, desc, precio, img, stock}) => {
                 />
 
                 <button className="btn btn-outline-primary" onClick={handleNavigate}>Volver</button>
+                </div>
             </div>
         </Contenedor>
     )
