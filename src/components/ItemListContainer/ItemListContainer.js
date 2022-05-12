@@ -1,13 +1,9 @@
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { ItemList } from "../ItemList/ItemList"
 import { getProducts } from "../../mocks/FakeApi"
-import { MyContext } from "../../Context/MyContext"
 
 export const ItemListContainer = () => {
-
-    const context = useContext(MyContext)
-    console.log(context)
     
     const [listaProductos, setListaProductos] = useState([])
     const [loading, setLoading] = useState(false)

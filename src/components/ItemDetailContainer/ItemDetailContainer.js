@@ -9,7 +9,6 @@ export const ItemDetailContainer = () => {
     const [carg, setCarg] = useState(false)
 
     const { itemId } = useParams()
-    console.log(itemId)
 
     useEffect(() => {
         setCarg(true)
