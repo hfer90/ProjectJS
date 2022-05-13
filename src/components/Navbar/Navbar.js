@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import logo from "../../img/logo.jpg"
-import carrito from "../../img/carrito.jpg"
+import CartWidget from "../CartWidget/CartWidget";
 
 export const NavBar = () => {
 
@@ -21,7 +21,7 @@ export const NavBar = () => {
                         <li><Link to="/category/verr">VERRU</Link></li>
                     </ul>
                 </nav>
-                <img className="img" src={carrito} alt="carrito" width="140px" />
+                <CartWidget/>
 
             </div>
         </header>
